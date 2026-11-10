@@ -1,0 +1,9 @@
+a. [git init] : vùng Working Directory
+
+b. file1.txt, file2.txt, oops/file3.txt : vùng Working Directory
+
+c. file1.txt và folder oops/ : vùng Working Directory (nhưng bị ignored)
+
+d. [git add. ] => file2.txt và file .gitignore được thêm vào vùng Staging Area
+
+e. [git commit -m"init project"] => file2 và .gitignore được commit vào Git repository : vùng Repository

@@ -1,0 +1,10 @@
+1.  [git commit --amend] => là lệnh giúp sửa đổi lần commit gần nhất (có thể là đổi sửa, thêm/xóa file)
+
+
+    [git commit --amend -m"msgs"] => lệnh này giúp sửa đổi msgs của lần commit gần nhất
+
+
+    [git restore --staged<tên_file>] => lệnh này giúp restore file chỉ định từ vùng Staging về WD
+
+    
+    [git reset HEAD~1] => giúp reset commit số 1 từ Repo về WD

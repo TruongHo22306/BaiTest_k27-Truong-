@@ -1,0 +1,55 @@
+2. 
+    a. 3 file được tạo : file1,file và file3 hiện chưa nằm trong vùng nào mà chỉ nằm trên folder local của máy tính
+    - Local: file1, file2, file3
+    - Working Directory:
+    - Staging:
+    - Repository:
+
+    b. [git init] : khởi tạo Git repository
+    - Local: file1, file2, file3
+    - Working Directory: file1, file2, file3 (untracked)
+    - Staging:
+    - Repository:
+
+    c. [git commit -m"init project"] 
+    - Local: file1, file2, file3
+    - Working Directory: file1, file2, file3(untracked)
+    - Staging: 
+    - Repository: 
+=> Lệnh này sẽ báo lỗi vì 3 file chưa file nào được staging => Error: nothing to commit
+
+    d. [git add file1] : đưa file1 vào vùng staging
+    - Local:  file1, file2, file3
+    - Working Directory: file2,file3
+    - Staging: file1
+    - Repository: 
+
+    e. [git commit -m"add file"] => lưu file1 lên repository 
+    - Local:  file1, file2, file3
+    - Working Directory: file2,file3
+    - Staging: 
+    - Repository: file1
+
+    f. [git add . ] => thêm file2 và file3 từ WD sang staging
+    - Local:  file1, file2, file3
+    - Working Directory: 
+    - Staging: file2,file3
+    - Repository: file1
+
+    g. [git restore --staged file2] => restore file2 từ staging về wd
+    - Local:  file1, file2, file3
+    - Working Directory: file2
+    - Staging: file3
+    - Repository: file1
+
+    h. [git commit -m"add all files"] => lưu file3 vào repository
+    - Local:  file1, file2, file3
+    - Working Directory: file2
+    - Staging: 
+    - Repository: file1, file3
+
+    i. [git reset HEAD~1] => hủy bỏ lệnh commit vừa tạo (file3 trở về vùng WD)
+    - Local:  file1, file2, file3
+    - Working Directory: file2,file3
+    - Staging: 
+    - Repository: file1, 
